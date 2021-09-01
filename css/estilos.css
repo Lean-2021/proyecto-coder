@@ -436,7 +436,7 @@ aside:hover {
 /* Quienes somos */
 .nosotros {
   display: grid;
-  grid-template-columns: 50%;
+  grid-template-columns: 80%;
   grid-row-gap: 70px;
   grid-column: 3/4;
   grid-template-rows: 200px 100px 700px;
@@ -455,11 +455,12 @@ aside:hover {
 
 .nosotros__description {
   display: grid;
-  grid-template-columns: 40% 10%;
+  grid-template-columns: 60% 10%;
   grid-template-rows: repeat(3, 1fr);
-  grid-column: 3/5;
-  grid-row-start: 9/12;
-  grid-row-gap: 60px;
+  grid-column: 1/5;
+  grid-row-start: 7/12;
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
   grid-template-areas: "textoEmpresa personasEmpresa" "textoEmpresa personasEmpresa"                     "textoEmpresa personasEmpresa";
   justify-content: center;
   align-items: center; }
@@ -467,7 +468,8 @@ aside:hover {
 /* staff empresa */
 .nosotros__description--staff {
   grid-area: textoEmpresa;
-  margin-top: -20px;
+  margin-top: -160px;
+  margin-left: -50px;
   font-size: 2.4rem;
   font-weight: bold;
   text-align: justify; }
@@ -475,7 +477,7 @@ aside:hover {
 .nosotros__personas {
   grid-area: personasEmpresa;
   width: 10%;
-  margin-left: 15%;
+  margin-left: 50%;
   top: 1280px; }
   .nosotros__personas .nosotros__persona--nombre {
     width: 150px;
