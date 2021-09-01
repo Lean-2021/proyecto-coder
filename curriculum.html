@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una Empresa que está consolidada en el mercado, si querés trabajar con nosotros, no pierdas la oportunidad.">
+    <meta name="keywords" content="conectividad,desktop,notebook,impresoras,monitores">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/soluico.png" type="image/x-icon">
+    <title>Soluciones Informaticas - Curriculum</title>
+</head>
+<body>
+    <!-- Comienzo del Header de Index.html -->
+    <header id="inicio">
+        <nav class="header__nav--menu">
+            <section class="logo">
+                <a href="index.html"><img src="images/cubocolor.png" alt="logo"class="logo__imagen"><p class ="logo__Texto"> soluciones informaticas</p></a>
+            </section>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="novedades.html">novedades</a></li>
+                <li>
+                    <a href="productos.html">productos</a>
+                    <input type="checkbox"class="check">
+                    <ul class="sublist">
+                        <li><a href="productos.html#notebooks">Notebooks</a></li>
+                        <li><a href="productos.html#impresoras">Impresoras</a></li>
+                        <li><a href="productos.html#desktop">Desktop</a></li>
+                        <li><a href="productos.html#conectividad">Conectividad</a></li>
+                        <li><a href="productos.html#monitores">Monitores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="marcas.html">marcas</a>
+                    <input type="checkbox">
+                    <ul class="sublist sublist__marcas">
+                        <li><a href="marcas.html#asus">Asus</a></li>
+                        <li><a href="marcas.html#dell">Dell</a></li>
+                        <li><a href="marcas.html#intel">Intel</a></li>
+                        <li><a href="marcas.html#lenovo">Lenovo</a></li>
+                        <li><a href="marcas.html#tplink">Tp-link</a></li>
+                        <li><a href="marcas.html#ubiquiti">Ubiquiti</a></li>
+                        <li><a href="marcas.html#hp">Hp</a></li>
+                    </ul>
+                </li>
+                <li><a href="quienes-somos.html">quienes somos</a></li>
+            </ul>        
+            <section class="section__login">
+                <section class="header__whatsapp">
+                    <a href="https://wa.me/5491144556789" target="_blank"><img src="images/whatsapp.png" alt="icono whatsapp"></a>
+                </section>
+                <section class="section__login--images">
+                <a href="#"data-bs-toggle="modal" data-bs-target="#compras"><img src="images/carrito.png" alt="comprar"></a>
+                <a href="#"data-bs-toggle="modal" data-bs-target="#login"><img src="images/usuario.png" alt="usuario"></a>
+                </section>
+                <section>
+                    <input type="search" placeholder="Buscar..." >
+                </section>
+            </section>   
+        </nav>
+        <!-- /Barra de Navegación --> 
+        <!-- sección compras -->
+        <section class="section__modal">      
+            <div class="modal" tabindex="-1"id="compras">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header header__title">
+                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - COMPRAS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <p>Para poder realizar la compra debes estar logueado</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn--medium btn-cancelar btn-modal" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /sección compras -->
+        <!-- sección login -->
+        <section class="section__modal">      
+            <div class="modal" tabindex="-1"id="login">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header header__title">
+                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - INGRESAR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body main">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                                </div>
+                                    <button type="submit" class="btn--medium btn-enviar btn-modal">Ingresar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /sección login -->
+    </header>
+    <!-- Fin del header de index.html -->
+    <!-- Comienzo del main de index.html -->
+    <main>
+    <!-- titulo -->
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titles">sumate a nuestra empresa</h2>
+                </div>
+            </div>
+        </section>
+    <!-- /titulo -->
+        <!--ingreso de curriculum vitae -->
+        <section class="form__curriculum container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#"method="GET">
+                        <img src="images/fondo3.png" alt="imagen curriculum"class="form__curriculum--fondo">
+                        <section>
+                            <label for="motivo">Contanos porque te gustaría trabajar con nosotros</label>
+                            <textarea name="motivo" id="" cols="50" rows="5" class="form__curriculum--textarea1"></textarea>
+                        </section>
+                        <label for="curriculum">Sube aquí tu curriculum vitae :</label>
+                        <input type="file"name="curriculum"class="form__curriculum--texto">
+                        <button type="submit"class="form__curriculum--boton btn--extra_large btn-item">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    <!--/ingreso de curriculum vitae -->
+    </main>
+    <!-- fin del main -->
+    <!-- Comienzo del footer -->
+    <footer class="footer">
+        <!-- sección boton top -->
+        <section class="footer__botonTop">
+            <a href="#inicio"><img src="images/top.png" alt="icono top"></a>
+        </section>
+    <!-- /sección boton top -->
+    <!-- Información de contacto para clientes -->
+        <section class="footer__informacion">
+            <p class="title"><img src="images/cubofooter.png " alt="Logo"class="logo"> SOLUCIONES INFORMATICAS</p>
+            <div>
+            <p><img src="images/maps.png" alt="icono"> Av Coder 1234</p>
+            <p><img src="images/telefono.png" alt="icono"> 11-1111-1111</p>
+            <p><img src="images/whatsapp.png" alt="icono"> 12-2233-4444</p>
+            <p><img src="images/mail.png" alt="icono"> Coder@coder.com</p>
+            </div>
+        </section> 
+    <!-- /Información de contacto para clientes -->
+    <!-- sección barra navegación del footer -->
+        <section>
+            <nav>
+                <ul class="footer__menu">
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="index.html">INICIO</a></p></li>  
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="novedades.html">NOVEDADES</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="productos.html">PRODUCTOS</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="marcas.html">MARCAS</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="quienes-somos.html">EMPRESA</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="contacto.html">CONTACTANOS</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="curriculum.html"class="footer__item--activo">SUBIR C.V.</a></p></li>
+                </ul>
+            </nav>
+            <!-- /sección barra navegación del footer -->
+        </section>
+        <section class=" container footer__redes--sociales">
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icono Facebook"></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="icono linkedin"></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" alt="icono instagram"></a>
+        </section>
+        <section class="container footer__copyright">
+            <p><img src="images/copyright.png" alt="copyright"> 2021 Leandro Wagner</p>
+        </section>
+    </footer>
+    <!-- Fin del footer --> 
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

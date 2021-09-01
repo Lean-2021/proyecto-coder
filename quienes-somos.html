@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consolidados en el mercado desde hace varios años, te ofrecemos un excelente asesoramiento con precios super competitivos.">
+    <meta name="keywords" content="conectividad,desktop,notebook,impresoras,monitores">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/soluico.png" type="image/x-icon">
+    <title>Soluciones Informáticas - Quiénes Somos</title>
+</head>
+<body>
+    <!-- Comienzo del Header de Index.html -->
+    <header id="inicio">
+        <nav class="header__nav--menu">
+            <section class="logo">
+                <a href="index.html"><img src="images/cubocolor.png" alt="logo"class="logo__imagen"><p class ="logo__Texto"> soluciones informaticas</p></a>
+            </section>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="novedades.html">novedades</a></li>
+                <li>
+                    <a href="productos.html">productos</a>
+                    <input type="checkbox"class="check">
+                    <ul class="sublist">
+                        <li><a href="productos.html#notebooks">Notebooks</a></li>
+                        <li><a href="productos.html#impresoras">Impresoras</a></li>
+                        <li><a href="productos.html#desktop">Desktop</a></li>
+                        <li><a href="productos.html#conectividad">Conectividad</a></li>
+                        <li><a href="productos.html#monitores">Monitores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="marcas.html">marcas</a>
+                    <input type="checkbox">
+                    <ul class="sublist sublist__marcas">
+                        <li><a href="marcas.html#asus">Asus</a></li>
+                        <li><a href="marcas.html#dell">Dell</a></li>
+                        <li><a href="marcas.html#intel">Intel</a></li>
+                        <li><a href="marcas.html#lenovo">Lenovo</a></li>
+                        <li><a href="marcas.html#tplink">Tp-link</a></li>
+                        <li><a href="marcas.html#ubiquiti">Ubiquiti</a></li>
+                        <li><a href="marcas.html#hp">Hp</a></li>
+                    </ul>
+                </li>
+                <li class="activo"><a href="quienes-somos.html">quienes somos</a></li>
+            </ul>        
+            <section class="section__login">
+                <section class="header__whatsapp">
+                    <a href="https://wa.me/5491144556789" target="_blank"><img src="images/whatsapp.png" alt="icono whatsapp"></a>
+                </section>
+                <section class="section__login--images">
+                <a href="#"data-bs-toggle="modal" data-bs-target="#compras"><img src="images/carrito.png" alt="comprar"></a>
+                <a href="#"data-bs-toggle="modal" data-bs-target="#login"><img src="images/usuario.png" alt="usuario"></a>
+                </section>
+                <section>
+                    <input type="search" placeholder="Buscar..." >
+                </section>
+            </section>   
+        </nav>
+        <!-- /Barra de Navegación --> 
+        <!-- sección compras -->
+        <section class="section__modal">      
+            <div class="modal" tabindex="-1"id="compras">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header header__title">
+                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - COMPRAS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <p>Para poder realizar la compra debes estar logueado</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn--medium btn-cancelar btn-modal" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /sección compras -->
+        <!-- sección login -->
+        <section class="section__modal">      
+            <div class="modal" tabindex="-1"id="login">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header header__title">
+                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - INGRESAR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body main">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                                </div>
+                                    <button type="submit" class="btn--medium btn-enviar btn-modal">Ingresar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /sección login -->
+    </header>
+    <!-- Fin del header de index.html -->    
+    <!-- comienzo del Main -->
+    <main>
+        <!-- informacion sobre la empresa -->
+        <section class="nosotros">
+                
+                    <h2 class="titles">quienes somos</h2>
+                    <p class="nosotros__info">Somos una empresa dedicada a la <strong>venta </strong> e instalación de productos <strong>informáticos</strong>, con una gran diversidad de productos de prestigiadas marcas. Importamos productos y marcas de alta calidad que nos permiten garantizarle y ofrecerle <strong>mejores precios</strong> y la confianza que usted merece. Desde el año 2016 nos renovamos día a día para cumplir con todo lo que nuestros clientes requieran, desde el momento de la compra,brindando un <strong>asesoramiento</strong> permanente.</p>
+                    <iframe src="https://www.youtube.com/embed/Ycs7gq_fRcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="nosotros__video"></iframe>
+                
+        
+        </section>  
+        <section class="nosotros__description">
+            <section class="nosotros__description--staff" >
+                <p>El compromiso que asumimos con nuestros clientes consiste en brindar <strong>asesoramiento</strong> de calidad que permitan satisfacer sus necesidades en forma eficiente.Para ello basamos nuestros procesos en las mejores prácticas en relación con la gestión de calidad,manteniento los siguientes principios:
+                    <ul>
+                        <li>Cumplir los requerimientos de nuestros clientes.</li>
+                        <li>Considerar a nuestros recursos humanos el activo más  valioso de nuestra empresa.</li>
+                        <li>Fomentar la formación profesional de nuestro equipo de trabajo.</li>
+                        <li>Mejorar nuestros <strong>productos</strong> y <strong>servicios</strong> para mantener una relación de largo plazo y satisfacción con nuestros clientes.</li>
+                        <li>Resolver cualquier incoveniente a la brevedad y de manera eficaz.</li>
+                        <li>Proteger la información confidencial de nuestros clientes.</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="nosotros__personas">
+                <img src="images/hombre.png" alt="persona" class="nosotros__persona--imagen">
+                <p class="nosotros__persona--nombre">Project Manager</p>
+                <img src="images/mujer.jpg" alt="persona"class="nosotros__persona--imagen">
+                <p class="nosotros__persona--nombre">Marketing</p>
+                <img src="images/hombre2.jpg" alt="persona"class="nosotros__persona--imagen">
+                <p class="nosotros__persona--nombre">Gerente Comercial</p>
+            </section>
+        </section>
+        <!-- /informacion sobre la empresa -->
+    <!-- fin del Main -->   
+    </main>
+    <!-- Comienzo del footer -->
+    <footer class="footer">
+        <!-- sección boton top -->
+        <section class="footer__botonTop">
+            <a href="#inicio"><img src="images/top.png" alt="icono top"></a>
+        </section>
+    <!-- /sección boton top -->
+    <!-- Información de contacto para clientes -->
+        <section class="footer__informacion">
+            <p class="title"><img src="images/cubofooter.png " alt="Logo"class="logo"> SOLUCIONES INFORMATICAS</p>
+            <div>
+            <p><img src="images/maps.png" alt="icono"> Av Coder 1234</p>
+            <p><img src="images/telefono.png" alt="icono"> 11-1111-1111</p>
+            <p><img src="images/whatsapp.png" alt="icono"> 12-2233-4444</p>
+            <p><img src="images/mail.png" alt="icono"> Coder@coder.com</p>
+            </div>
+        </section> 
+    <!-- /Información de contacto para clientes -->
+    <!-- sección barra navegación del footer -->
+        <section>
+            <nav>
+                <ul class="footer__menu">
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="index.html">INICIO</a></p></li>  
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="novedades.html">NOVEDADES</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="productos.html">PRODUCTOS</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="marcas.html">MARCAS</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="quienes-somos.html"class="footer__item--activo">EMPRESA</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="contacto.html">CONTACTANOS</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="curriculum.html">SUBIR C.V.</a></p></li>
+                </ul>
+            </nav>
+            <!-- /sección barra navegación del footer -->
+        </section>
+        <section class=" container footer__redes--sociales">
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icono Facebook"></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="icono linkedin"></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" alt="icono instagram"></a>
+        </section>
+        <section class="container footer__copyright">
+            <p><img src="images/copyright.png" alt="copyright"> 2021 Leandro Wagner</p>
+        </section>
+    </footer>
+    <!-- Fin del footer --> 
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

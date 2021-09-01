@@ -1,0 +1,80 @@
+// colores Botones
+$botones:(
+    enviar:rgb(33, 139, 23),
+    curriculum:rgb(151, 206, 238),
+    cancelar:rgb(192, 23, 23),
+    item:var(--color_items-nav),
+);
+@each $boton,$bgcolor in $botones{
+    .btn-#{$boton}{
+    background-color:$bgcolor;
+    }
+};
+// tamaño botones   
+@mixin size__boton($width,$height,$bround,$color,$sombra,$bcolor){
+    width:$width;
+    height:$height;
+    border-radius:$bround;
+    color:$color;
+    box-shadow:2px 2px 4px $sombra;
+    border:2px solid $bcolor;
+};
+// texto botones
+$font_boton:(
+    small:1.2rem,
+    medium:1.6rem,
+    large:2.5rem,
+    extra_large:3rem,
+);
+@each $boton,$size in $font_boton{
+    .btn--#{$boton}{
+        font-size:$size;
+    }
+};
+
+// textarea de curriculum
+@mixin textarea__curriculum($width,$height,$borde,$bcolor,$bround,$bgcolor,$font,$padding) {
+    width:$width;
+    height:$height;
+    border:$borde solid $bcolor;
+    border-radius:$bround;
+    background-color:$bgcolor;
+    font-size:$font;
+    padding:$padding;
+}
+
+// modales
+@mixin modal($color,$bgcolor,$font,$weight) {
+    color:$color;
+    background-color:$bgcolor;
+    font-size:$font;
+    font-weight: $weight;
+}
+
+// sidebar
+@mixin sidebar($width,$height,$top){
+    width:$width;
+    height:$height;
+    top:$top;
+    border-radius:0 15px 15px 0;
+    background-color:var(--color_items-nav);
+    font-size: 1.4rem;
+    box-shadow: 3px 3px 3px black;
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Rosario', sans-serif;
+    text-transform: uppercase;
+}
+// efectos hover sidebar
+@mixin hover1{
+    color:coral;
+}
+@mixin hover2{
+    transform:scale(1.1);
+}
+@mixin hover_desplazo{
+    transform: translate(2px,2px);
+    box-shadow:none;
+}

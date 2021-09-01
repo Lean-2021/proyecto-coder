@@ -1,0 +1,39 @@
+/* efecto logo */
+.logo{
+    img:hover{
+    animation-name:rotar;
+    animation-duration:1s;
+    }
+    @keyframes rotar{
+        from{}
+        to{
+            transform:rotate3d(2,0,100 ,360deg);
+        }
+    }
+}
+/* efecto sublista */
+@keyframes subListas{
+    from{
+        margin-top:-10px;
+        opacity:0;
+    }
+    to{
+        margin-top:0px;
+        opacity: 1;
+    }
+}
+/* efecto sublista */
+/* botón Whatsapp */
+@keyframes whatsapp{
+    from{
+        top:20%;
+        left:20%;
+        opacity:0;
+    }
+    to{
+        top:20%;
+        left:10%;
+        opacity:1;
+    } 
+}
+/* /botón Whatsapp */

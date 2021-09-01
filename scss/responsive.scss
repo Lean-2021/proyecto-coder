@@ -1,0 +1,598 @@
+// Resoluciones pequeñas
+@media only screen and (min-width:300px) and (max-width:600px){
+    .header__nav--menu{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+        align-items:flex-start;
+        ul{
+            display:flex;
+            flex-direction: column;
+            margin-top:20px;
+            align-items:flex-end; 
+            li{
+                width:200px;
+                margin-left:0;
+                margin-bottom:5px;
+            }
+            input[type="checkbox"]{
+                position:absolute;
+                display:inline-block;
+                margin-left:5px;
+                margin-top:5px;   
+            }
+            input[type="checkbox"]::after{
+                position:absolute;
+                color:white;
+                background-color:var(--color_items-nav);
+                height:20px;
+                margin-left:0px;
+                font-weight: bold;
+                vertical-align:text-bottom;
+                content:'﹀';
+            }
+            input[type="checkbox"]::after:checked{
+                color:coral;
+            }
+            input[type="checkbox"]:checked ~ .sublist{
+                    display:block;
+                }
+            input[type="checkbox"]:not(:checked) ~ .sublist{
+                    display:none;
+            }
+            .sublist{
+                left:-16px;
+                top:85px;
+            }
+            .sublist__marcas{
+                top:50px;
+                left:-16px;
+            }
+        }
+    }
+    .section__login{
+        display:flex;
+        width:100%;
+        flex-flow:column nowrap;
+        align-items: center;
+        justify-content: center;
+        img{
+            width:60px;
+        }
+        input{
+            margin-left:6%;
+            width:160px;
+        }
+        .header__whatsapp{
+            position:absolute;
+            display:inline-block;
+            left:5px;
+            box-shadow:4px 4px 4px grey;
+            border-radius:34px;
+            img{
+                margin:auto;
+                width:60px;
+                height:60px;
+            }
+        }
+    }
+    .section__carousel{
+        width:95%;
+        z-index:-1;
+    }
+    .novedades{
+        .novedades__title{
+            margin-top:100px;
+            font-size:6rem;
+            letter-spacing:0;
+        }
+        .novedades__description{
+            font-size:2.2rem;
+        }
+        .novedades__imagen--decorativa{
+            position:absolute;
+            width:150px;
+            height:80px;
+            left:55%;
+            top:36%;
+        } 
+    }
+    .sidebar{
+        display:none;
+    }
+    .marcas{
+        margin-top:30px;
+        .marcas__title{
+            position:relative;
+            font-size:6rem;
+        }
+        .marcas__imagen--decorativa{
+            position:absolute;
+            top:400px;
+            width:150px;
+            height:80px;
+            left:48%;
+            top:4%;        }
+    }
+    .cards__image{
+        display:flex;
+        flex-direction: column;
+        align-content:center;
+        }
+    .footer{
+        width:100%;
+        height:600px;
+        .footer__botonTop{
+            display:none;
+        }
+        .footer__informacion{
+            display:flex;
+            width:90%;
+            flex-direction:column;
+            align-items: center;
+            .logo{
+                margin-left:-20px;
+            }
+        }
+        .footer__menu{
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            width:100%;
+            align-content:center;
+            margin-left:auto;
+        }
+        .footer__copyright{
+            width:100%;
+        }
+    }
+    .whatsapp{
+        display:none;
+    }
+    .sidebar__productos{
+        display:none;
+    }
+    .sidebar__marcas{
+        display:none;
+    }
+    .titles{
+        margin-top:40px;
+        font-size:4rem;
+    }
+    .nosotros{
+        grid-template-columns:310px;
+        grid-row-gap:30px;
+        .nosotros__info{
+            margin-top:140px;
+            text-align:justify;
+            font-size:1.8rem;
+        }
+        .nosotros__video{
+            width:100%;
+            height:320px;
+        }
+    }
+    .nosotros__description{
+        grid-template-columns: 310px;
+        grid-template-rows:repeat(3,1fr);
+        grid-template-areas:"textoEmpresa"
+                            "textoEmpresa"
+                            "textoEmpresa"
+                            "personasEmpresa"
+                            "personasEmpresa"
+                            "personasEmpresa";
+        .nosotros__description--staff{
+            font-size:1.8rem;
+            margin-top: -160px;
+        }
+    }
+    .nosotros__personas{
+        width:310px;
+        margin-left: 0;
+        text-align: center;
+        .nosotros__persona--nombre{
+            width:100%;
+        }
+    }
+    .contactos{
+        margin-top:-10px;
+        width:310px;
+        box-shadow: 2px 2px 4px black;
+    }
+    .formulario{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items: center;
+        input[type=radio] + .labelRadio{
+            cursor:pointer;
+            }
+        input[type=radio]:checked + .labelRadio{
+            position:relative;
+            margin-left:-20px;
+        }
+        input[type=radio]:checked + .labelRadio:after{
+            content:'✅';
+            font-size: 2rem;
+            position:absolute;
+            margin-left:15px;
+            top:10px;
+        }
+        .labelIntereses{
+            position:relative;
+            text-align: center;
+            margin-left:-5px;
+            font-size: 2.5rem;
+        }
+        .labelIntereses::after{
+            position:absolute;
+            left:100%;
+            border:none;
+            text-align: center;
+            box-shadow: none;
+        }
+        .textArea{
+            width:250px;
+            height:200px;
+        }
+        .botonEnviar, .botonCancelar{
+            width:100%;
+        }
+    }
+    // video de Youtube Sección Novedades
+    .novedades__video--youtube{
+        width:310px;
+        height:300px;
+    }ç
+    // titulo de descripción de las páginas del sitio
+    .titlesDescriptionSitio{
+        font-size:2.5rem;
+        text-align: center;
+    }
+    // formulario de página Curriculum
+    .form__curriculum{
+        width:310px;
+        height:650px;
+        margin-top:-10px;
+        .form__curriculum--texto{
+            font-size:1.8rem;
+            width:310px;
+        }
+        .form__curriculum--fondo{
+            width:100%;
+            height:1400px;
+        }
+        .form__curriculum--textarea1{
+        @include textarea__curriculum (310px,200px,4px,purple,5px,lightcyan,2rem,10px);
+        }
+    }
+}
+  
+//Resoluciones Medianas
+@media only screen and(min-width:610px)and(max-width:960px){
+    .header__nav--menu{
+        display:flex;
+        flex-direction:column;
+        align-content:center;
+        .logo{
+            align-self:flex-start;
+            margin-left:20%;
+        }
+        ul{
+            display:flex;
+            flex-flow:column wrap;
+            align-content:center;
+            margin-top:20px;
+            li{
+                width:250px;
+                margin-left:0;
+                margin-bottom:8px;
+                a{
+                    font-size:2.2rem;
+                }
+            }
+            input[type="checkbox"]{
+                position:absolute;
+                display:inline-block;
+                margin-left:5px;
+                margin-top:5px;   
+            }
+            input[type="checkbox"]::after{
+                position:absolute;
+                color:white;
+                background-color:var(--color_items-nav);
+                height:20px;
+                margin-left:0px;
+                font-weight: bold;
+                vertical-align:text-bottom;
+                content:'﹀';
+            }
+            input[type="checkbox"]::after:checked{
+                color:coral;
+            }
+            input[type="checkbox"]:checked ~ .sublist{
+                    display:block;
+                }
+            input[type="checkbox"]:not(:checked) ~ .sublist{
+                    display:none;
+            }
+            .sublist{
+                left:-13px;
+                top:92px;
+                li{
+                    width:240px;
+                }
+            }
+            .sublist__marcas{
+                top:54px;
+                left:-13px;
+            }
+        }
+        .section__login{
+            display:flex;
+            flex-flow:column nowrap;
+            align-items:center;
+            width:100%;
+            .section__login--images{
+                display:flex;
+                width:200px;
+                flex-flow: row nowrap;
+                justify-content:center;
+                margin-right:20px;
+                img{
+                    width:70px;
+                }
+            }
+            input{
+                width:260px;
+                font-size: 2rem;
+                height:40px;
+                padding:8px;
+                border-radius:20px;
+            }
+        }
+    }
+    .footer{
+        height:600px;
+        .footer__botonTop{
+            display:none;
+        }
+        .footer__informacion{
+            display:flex;
+            width:97%;
+            flex-direction:column;
+            align-items: center;
+            .logo{
+                margin-left:-20px;
+            }
+            .title{
+                font-size: 2.5rem;
+            }
+        }
+        .footer__menu{
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            width:100%;
+            align-content:center;
+            margin-left:auto;
+        }
+        .footer__copyright{
+            width:100%;
+        }
+    }
+    .whatsapp{
+        left:53%;
+        z-index:2;
+        img{
+            width:70px;
+            height:70px;
+        }
+    }    
+    .sidebar{
+        display:none;
+    }
+    .sidebar__productos{
+        display:none;
+    }
+    .sidebar__marcas{
+        display:none;
+    }
+    
+    .nosotros{
+        grid-template-columns:520px;
+        grid-row-gap:20px;
+        .nosotros__info{
+            margin-top:140px;
+            text-align:justify;
+            font-size:2rem;
+        }
+        .nosotros__video{
+            margin-top:-60px;
+            width:100%;
+            height:320px;
+        }
+    }
+        .nosotros__description{
+        grid-template-columns: 520px;
+        grid-template-rows:repeat(3,1fr);
+        grid-template-areas:"textoEmpresa"
+                            "textoEmpresa"
+                            "textoEmpresa"
+                            "personasEmpresa"
+                            "personasEmpresa"
+                            "personasEmpresa";
+        .nosotros__description--staff{
+            font-size:2rem;
+            margin-top: -180px;
+        }
+    }
+    .nosotros__personas{
+        width:520px;
+        margin-left: 0;
+        text-align: center;
+        .nosotros__persona--nombre{
+            width:100%;
+        }
+    }
+    .contactos{
+        margin-top:-10px;
+        width:510px;
+        box-shadow: 2px 2px 4px black;
+    }
+    .formulario{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items: center;
+        input[type=radio] + .labelRadio{
+            cursor:pointer;
+            }
+        input[type=radio]:checked + .labelRadio{
+            position:relative;
+            margin-left:-20px;
+        }
+        input[type=radio]:checked + .labelRadio:after{
+            content:'✅';
+            font-size: 2rem;
+            position:absolute;
+            margin-left:15px;
+            top:10px;
+        }
+        .labelIntereses{
+            position:relative;
+            text-align: center;
+            margin-left:-5px;
+            font-size: 2.5rem;
+        }
+        .labelIntereses::after{
+            position:absolute;
+            left:100%;
+            border:none;
+            text-align: center;
+            box-shadow: none;
+        }
+        .textArea{
+            width:340px;
+            height:200px;
+        }
+        .botonEnviar, .botonCancelar{
+            width:50%;
+        }
+    }
+    // video de Youtube Sección Novedades
+    .novedades__video--youtube{
+        width:600px;
+        height:350px;
+    }
+    // titulo de descripción de las páginas del sitio
+    .titlesDescriptionSitio{
+        font-size:2.5rem;
+        text-align: center;
+    }
+    // formulario de página Curriculum
+    .form__curriculum{
+        height:650px;
+        margin-top:-10px;
+        .form__curriculum--fondo{
+            height:1500px;
+        }
+        .form__curriculum--boton{
+            margin-top: 30px;
+        }
+    }
+}
+@media only screen and(min-width:960px) and (max-width:1300px) and(orientation:landscape){
+    .logo{
+        width:20%;
+    }
+    .header__nav--menu{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        ul{
+            display:flex;
+            width:100%;
+            flex-flow:row wrap;
+            margin-top:30px;
+            li{
+                position:relative;
+            }
+            .sublist__marcas{
+                top:0;
+            }
+            .sublist{
+                top:0;
+            }
+        }
+        .section__login{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content: center;
+            input{
+                border-radius: 20px;
+                width:300px;
+                height:40px;
+            }
+            .section__login--images{
+                display:flex;
+                flex-flow:row nowrap;
+                margin-top:20px;
+                img{
+                    width:60px;
+                }
+            }
+        }
+    }
+    .whatsapp{
+        position:absolute;
+        left:70%;
+        z-index:1;
+    }
+    .footer{
+        .footer__informacion{
+            width:30%;
+        }
+        .footer__menu{
+            position:absolute;
+            left:200px;
+            width:70%;
+        }
+        .footer__copyright{
+            width:100%;
+        }
+    }
+    .nosotros{
+        grid-row-gap:110px;
+    }
+    .sidebar__marcas{
+        display:none;
+    }
+    .sidebar__productos{
+        display:none;
+    }
+    .contactos{
+        width:60%;
+    }
+    .formulario{
+        grid-template-columns: 250px 300px;
+    }
+    .botonEnviar{
+        width:150px;
+    }
+    // formulario de página Curriculum
+    .form__curriculum{
+        height:650px;
+        margin-top:-10px;
+        .form__curriculum--fondo{
+            width:100%;
+            height:1200px;
+        }
+        .form__curriculum--textarea1{
+        @include textarea__curriculum (500px,300px,4px,purple,5px,lightcyan,2rem,10px);
+        }
+        .form__curriculum--boton{
+            margin-top: 80px;
+        }
+    }
+
+}
