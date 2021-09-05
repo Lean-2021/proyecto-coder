@@ -13,7 +13,16 @@ html{
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
-    // logo
+// nav para mobiles
+.navbar{
+    display:none;
+    visibility: hidden;
+}
+.navbar-brand{
+    visibility: hidden;
+    display:none;
+}
+// logo
 .logo{
     width:10%;
     .logo__imagen{
@@ -41,6 +50,7 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:1em;
+    margin-top:-30px;    
     ul{
         display:flex;
         flex-flow:row wrap;
@@ -426,6 +436,10 @@ aside:hover{
             width:16px;
         }
     }
+    .footer__mail{
+        text-decoration: none;
+        color:black;
+    }
 }
 // Fin del Footer
 /* Quienes somos */
@@ -791,6 +805,7 @@ input[type=checkbox]:checked + .labelIntereses:after{
         text-decoration:none;
         font-weight: bold;
         font-size:1.4rem;
+        letter-spacing: 2px;
         text-shadow:2px 2px 2px var(--sombra_items-nav);
     }
     .sidebar__marcas--texto:hover{
@@ -832,6 +847,8 @@ input[type=checkbox]:checked + .labelIntereses:after{
 }
 // sitio web Error - Página no encontrada
 .section__error--404{
+    height:400px;
+    margin-top: 10%;
     .section__error--title{
         vertical-align: middle;
     }
@@ -839,10 +856,17 @@ input[type=checkbox]:checked + .labelIntereses:after{
         margin-top:0px;
         width:150px;
     }
+    .animacion__error404:hover{
+        animation-name:rotar;
+        animation-duration:1s;
+    }
     .section__error--description{
         margin-top:30px;
+        width:80%;
+        margin-left: 11%;
         font-size: 2.5rem;
         text-align:center;
+        margin-bottom: 30px;;
     }
     .btn-error{
         color:white;

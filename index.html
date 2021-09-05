@@ -19,7 +19,75 @@
 </head>
 <body>
     <!-- Comienzo del Header de Index.html -->
+    <!--Barra de Navegacion Mobile -->
     <header id="inicio">
+    <nav class="navbar navbar-default fixer-top">
+        <div class="container-fluid nav">
+            <a class="nav__title navbar-brand" href="index.html"><img src="/images/cubocolor.png" alt="logo">SOLUCIONES INFORMATICAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title nav__list--title" id="offcanvasNavbarLabel"><img src="/images/cubocolor.png" alt="logo">SOLUCIONES INFORMATICAS</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item activo">
+                            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="novedades.html">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="productos.html#notebooks">NOTEBOOKS</a></li>
+                                <li><a class="dropdown-item" href="productos.html#impresoras">IMPRESORAS</a></li>
+                                <li><a class="dropdown-item" href="productos.html#desktop">DESKTOP</a></li>
+                                <li><a class="dropdown-item" href="productos.html#conectividad#">CONECTIVIDAD</a></li>
+                                <li><a class="dropdown-item" href="productos.html#monitores">MONITORES</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MARCAS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="marcas.html#asus">ASUS</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#dell">DELL</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#intel">INTEL</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#lenovo">LENOVO</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#tplink">TP-LINK</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#ubiquiti">UBIQUITI</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#hp">HP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTANOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curriculum.html">SUBIR C.V.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas-footer text-center">
+                    <a href="https://es-la.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icono Facebook"></a>
+                    <a href="https://ar.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="icono linkedin"></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" alt="icono instagram"></a>
+                    <p><img src="images/copyright.png" alt="copyright"class="header__copyright"><b class="copyright__texto">2021 Leandro Wagner</b></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Barra deNavegacion Mobile--> 
+    <!-- Barra de navegacion -->
         <nav class="header__nav--menu">
             <section class="logo">
                 <a href="index.html"><img src="images/cubocolor.png" alt="logo"class="logo__imagen"><p class ="logo__Texto"> soluciones informaticas</p></a>
@@ -256,7 +324,7 @@
             <p><img src="images/maps.png" alt="icono"> Av Coder 1234</p>
             <p><img src="images/telefono.png" alt="icono"> 11-1111-1111</p>
             <p><img src="images/whatsapp.png" alt="icono"> 12-2233-4444</p>
-            <p><img src="images/mail.png" alt="icono"> Coder@coder.com</p>
+            <p><a href="mailto:coder@coder.com.ar"class="footer__mail"><img src="images/mail.png" alt="icono"> Coder@coder.com</a></p>
             </div>
         </section> 
     <!-- /Información de contacto para clientes -->

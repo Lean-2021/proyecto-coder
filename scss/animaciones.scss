@@ -4,11 +4,11 @@
     animation-name:rotar;
     animation-duration:1s;
     }
-    @keyframes rotar{
-        from{}
-        to{
-            transform:rotate3d(2,0,100 ,360deg);
-        }
+}
+@keyframes rotar{
+    from{}
+    to{
+        transform:rotate3d(2,0,100 ,360deg);
     }
 }
 /* efecto sublista */
@@ -37,3 +37,4 @@
     } 
 }
 /* /botón Whatsapp */
+

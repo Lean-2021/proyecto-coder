@@ -19,111 +19,179 @@
 </head>
 <body>
     <!-- Comienzo del Header de Index.html -->
+    <!--Barra de Navegacion Mobile -->
     <header id="inicio">
-        <nav class="header__nav--menu">
-            <section class="logo">
-                <a href="index.html"><img src="images/cubocolor.png" alt="logo"class="logo__imagen"><p class ="logo__Texto"> soluciones informaticas</p></a>
-            </section>
-            <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li class="activo"><a href="novedades.html">novedades</a></li>
-                <li>
-                    <a href="productos.html">productos</a>
-                    <input type="checkbox"class="check">
-                    <ul class="sublist">
-                        <li><a href="productos.html#notebooks">Notebooks</a></li>
-                        <li><a href="productos.html#impresoras">Impresoras</a></li>
-                        <li><a href="productos.html#desktop">Desktop</a></li>
-                        <li><a href="productos.html#conectividad">Conectividad</a></li>
-                        <li><a href="productos.html#monitores">Monitores</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="marcas.html">marcas</a>
-                    <input type="checkbox">
-                    <ul class="sublist sublist__marcas">
-                        <li><a href="marcas.html#asus">Asus</a></li>
-                        <li><a href="marcas.html#dell">Dell</a></li>
-                        <li><a href="marcas.html#intel">Intel</a></li>
-                        <li><a href="marcas.html#lenovo">Lenovo</a></li>
-                        <li><a href="marcas.html#tplink">Tp-link</a></li>
-                        <li><a href="marcas.html#ubiquiti">Ubiquiti</a></li>
-                        <li><a href="marcas.html#hp">Hp</a></li>
-                    </ul>
-                </li>
-                <li><a href="quienes-somos.html">quienes somos</a></li>
-            </ul>        
-            <section class="section__login">
-                <section class="header__whatsapp">
-                    <a href="https://wa.me/5491144556789" target="_blank"><img src="images/whatsapp.png" alt="icono whatsapp"></a>
-                </section>
-                <section class="section__login--images">
-                <a href="#"data-bs-toggle="modal" data-bs-target="#compras"><img src="images/carrito.png" alt="comprar"></a>
-                <a href="#"data-bs-toggle="modal" data-bs-target="#login"><img src="images/usuario.png" alt="usuario"></a>
-                </section>
-                <section>
-                    <input type="search" placeholder="Buscar..." >
-                </section>
-            </section>   
+        <nav class="navbar navbar-default fixer-top">
+            <div class="container-fluid nav">
+                <a class="nav__title navbar-brand" href="index.html"><img src="/images/cubocolor.png" alt="logo">SOLUCIONES INFORMATICAS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title nav__list--title" id="offcanvasNavbarLabel"><img src="/images/cubocolor.png" alt="logo">SOLUCIONES INFORMATICAS</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-center">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item activo">
+                                <a class="nav-link" href="novedades.html">NOVEDADES</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="productos.html#notebooks">NOTEBOOKS</a></li>
+                                    <li><a class="dropdown-item" href="productos.html#impresoras">IMPRESORAS</a></li>
+                                    <li><a class="dropdown-item" href="productos.html#desktop">DESKTOP</a></li>
+                                    <li><a class="dropdown-item" href="productos.html#conectividad#">CONECTIVIDAD</a></li>
+                                    <li><a class="dropdown-item" href="productos.html#monitores">MONITORES</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MARCAS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="marcas.html#asus">ASUS</a></li>
+                                    <li><a class="dropdown-item" href="marcas.html#dell">DELL</a></li>
+                                    <li><a class="dropdown-item" href="marcas.html#intel">INTEL</a></li>
+                                    <li><a class="dropdown-item" href="marcas.html#lenovo">LENOVO</a></li>
+                                    <li><a class="dropdown-item" href="marcas.html#tplink">TP-LINK</a></li>
+                                    <li><a class="dropdown-item" href="marcas.html#ubiquiti">UBIQUITI</a></li>
+                                    <li><a class="dropdown-item" href="marcas.html#hp">HP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTANOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="curriculum.html">SUBIR C.V.</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-footer text-center">
+                        <a href="https://es-la.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icono Facebook"></a>
+                        <a href="https://ar.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="icono linkedin"></a>
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" alt="icono instagram"></a>
+                        <p><img src="images/copyright.png" alt="copyright"class="header__copyright"><b class="copyright__texto">2021 Leandro Wagner</b></p>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <!-- /Barra de Navegación --> 
-        <!-- sección compras -->
-        <section class="section__modal">      
-            <div class="modal" tabindex="-1"id="compras">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header header__title">
-                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - COMPRAS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        <p>Para poder realizar la compra debes estar logueado</p>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn--medium btn-cancelar btn-modal" data-bs-dismiss="modal">Cerrar</button>
+        <!-- / Barra deNavegacion Mobile--> 
+        <!-- Barra de navegacion -->
+            <nav class="header__nav--menu">
+                <section class="logo">
+                    <a href="index.html"><img src="images/cubocolor.png" alt="logo"class="logo__imagen"><p class ="logo__Texto"> soluciones informaticas</p></a>
+                </section>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li class="activo"><a href="novedades.html">novedades</a></li>
+                    <li>
+                        <a href="productos.html">productos</a>
+                        <input type="checkbox"class="check">
+                        <ul class="sublist">
+                            <li><a href="productos.html#notebooks">Notebooks</a></li>
+                            <li><a href="productos.html#impresoras">Impresoras</a></li>
+                            <li><a href="productos.html#desktop">Desktop</a></li>
+                            <li><a href="productos.html#conectividad">Conectividad</a></li>
+                            <li><a href="productos.html#monitores">Monitores</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="marcas.html">marcas</a>
+                        <input type="checkbox">
+                        <ul class="sublist sublist__marcas">
+                            <li><a href="marcas.html#asus">Asus</a></li>
+                            <li><a href="marcas.html#dell">Dell</a></li>
+                            <li><a href="marcas.html#intel">Intel</a></li>
+                            <li><a href="marcas.html#lenovo">Lenovo</a></li>
+                            <li><a href="marcas.html#tplink">Tp-link</a></li>
+                            <li><a href="marcas.html#ubiquiti">Ubiquiti</a></li>
+                            <li><a href="marcas.html#hp">Hp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quienes-somos.html">quienes somos</a></li>
+                </ul>        
+                <section class="section__login">
+                    <section class="header__whatsapp">
+                        <a href="https://wa.me/5491144556789" target="_blank"><img src="images/whatsapp.png" alt="icono whatsapp"></a>
+                    </section>
+                    <section class="section__login--images">
+                    <a href="#"data-bs-toggle="modal" data-bs-target="#compras"><img src="images/carrito.png" alt="comprar"></a>
+                    <a href="#"data-bs-toggle="modal" data-bs-target="#login"><img src="images/usuario.png" alt="usuario"></a>
+                    </section>
+                    <section>
+                        <input type="search" placeholder="Buscar..." >
+                    </section>
+                </section>   
+            </nav>
+            <!-- /Barra de Navegación --> 
+            <!-- sección compras -->
+            <section class="section__modal">      
+                <div class="modal" tabindex="-1"id="compras">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header header__title">
+                            <h5 class="modal-title">SOLUCIONES INFORMATICAS - COMPRAS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <p>Para poder realizar la compra debes estar logueado</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn--medium btn-cancelar btn-modal" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- /sección compras -->
-        <!-- sección login -->
-        <section class="section__modal">      
-            <div class="modal" tabindex="-1"id="login">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header header__title">
-                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - INGRESAR</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body main">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email:</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo...">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-                                </div>
-                                    <button type="submit" class="btn--medium btn-enviar btn-modal">Ingresar</button>
-                            </form>
+            </section>
+            <!-- /sección compras -->
+            <!-- sección login -->
+            <section class="section__modal">      
+                <div class="modal" tabindex="-1"id="login">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header header__title">
+                            <h5 class="modal-title">SOLUCIONES INFORMATICAS - INGRESAR</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body main">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo...">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                                    </div>
+                                        <button type="submit" class="btn--medium btn-enviar btn-modal">Ingresar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- /sección login -->
-    </header>
-    <!-- Fin del header de index.html -->
+            </section>
+            <!-- /sección login -->
+        </header>
+        <!-- Fin del header de index.html -->
     <main>
     <!-- Seccion Novedades -->
         <section class="ultimasNovedades">
-            <h1 class="titles">Novedades</h1>
+            <h1 class="title__novedades titles">Novedades</h1>
             <section>
                 <h2 class="titlesDescriptionSitio">No te pierdas las <strong> Notebooks</strong> que acaban de ingresar</h2>
             </section>
@@ -178,7 +246,7 @@
             <p><img src="images/maps.png" alt="icono"> Av Coder 1234</p>
             <p><img src="images/telefono.png" alt="icono"> 11-1111-1111</p>
             <p><img src="images/whatsapp.png" alt="icono"> 12-2233-4444</p>
-            <p><img src="images/mail.png" alt="icono"> Coder@coder.com</p>
+            <p><a href="mailto:coder@coder.com.ar"class="footer__mail"><img src="images/mail.png" alt="icono"> Coder@coder.com</a></p>
             </div>
         </section> 
     <!-- /Información de contacto para clientes -->
