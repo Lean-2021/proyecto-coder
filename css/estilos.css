@@ -555,7 +555,7 @@ aside:hover {
   letter-spacing: 3px;
   color: black;
   background-size: cover;
-  background-image: url("/images/fondo6.png");
+  background-image: url("../images/fondo6.png");
   border: 2px solid #020202;
   box-shadow: 4px 4px 4px #0a0a0a; }
   .contactos .contactos_input {
