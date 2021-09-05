@@ -888,6 +888,10 @@ input[type=checkbox]:checked + .labelIntereses:after {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px; }
+  .section__error--404 .section__error--imagen {
+    width: 300px;
+    margin-top: 30px;
+    left: 60%; }
   .section__error--404 .btn-error {
     color: white;
     padding: 4px;
@@ -908,7 +912,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
     .navbar .nav__title, .navbar .nav__list--title {
       visibility: visible;
       display: block;
-      font-size: 15px;
+      font-size: 18px;
+      margin-right: 15px;
       font-weight: bold;
       color: var(--color_titles); }
     .navbar .navbar-toggler-icon {

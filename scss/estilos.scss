@@ -868,12 +868,17 @@ input[type=checkbox]:checked + .labelIntereses:after{
         text-align:center;
         margin-bottom: 30px;;
     }
+    .section__error--imagen{
+        width:300px;
+        margin-top:30px;
+        left:60%;
+    }
     .btn-error{
         color:white;
         padding:4px;
         border-radius:12px;
         text-decoration:none;
-        box-shadow:2px 2px 4px black;  
+        box-shadow:2px 2px 4px black;
     }
     .btn-error:hover{
         @include hover1;
