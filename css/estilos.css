@@ -1389,7 +1389,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
     .form__curriculum .form__curriculum--boton {
       margin-top: 30px; } }
 
-@media only screen and (min-width: 960px) and (max-width: 1300px) and (orientation: landscape) {
+@media only screen and (min-width: 960px) and (max-width: 1400px) and (orientation: landscape) {
   .logo {
     width: 20%; }
   .header__nav--menu {
@@ -1423,7 +1423,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
           width: 70px; }
   .whatsapp {
     position: absolute;
-    left: 70%;
+    left: 74%;
     z-index: 1; }
   .footer .footer__informacion {
     width: 30%; }
@@ -1461,3 +1461,13 @@ input[type=checkbox]:checked + .labelIntereses:after {
       padding: 10px; }
     .form__curriculum .form__curriculum--boton {
       margin-top: 80px; } }
+
+@media only screen and (min-width: 1401px) and (max-width: 1673px) and (orientation: landscape) {
+  .section__login input {
+    width: 140px; }
+  .whatsapp {
+    left: 75%; }
+  .footer .footer__informacion {
+    width: 25%; }
+  .footer .footer__copyright {
+    width: 15%; } }
