@@ -1,10 +1,8 @@
 /* efecto logo */
-.logo{
-    img:hover{
+.logo__imagen:hover{
     animation-name:rotar;
     animation-duration:1s;
     }
-}
 @keyframes rotar{
     from{}
     to{
@@ -12,13 +10,13 @@
     }
 }
 /* efecto sublista */
-@keyframes subListas{
+@keyframes sublistas{
     from{
-        margin-top:-10px;
         opacity:0;
+        transform: rotatey(-90deg);
     }
     to{
-        margin-top:0px;
+        transform: rotatey(0deg);
         opacity: 1;
     }
 }

@@ -19,109 +19,42 @@
 </head>
 <body>
     <!-- Comienzo del Header de Index.html -->
-    <!--Barra de Navegacion Mobile -->
+    <!--Barra de Navegacion Mobile / Desktop -->
     <header id="inicio">
-    <nav class="navbar navbar-default fixer-top">
-        <div class="container-fluid nav">
-            <a class="nav__title navbar-brand" href="index.html"><img src="images/cubocolor.png" alt="logo">SOLUCIONES INFORMATICAS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title nav__list--title" id="offcanvasNavbarLabel"><img src="images/cubocolor.png" alt="logo">SOLUCIONES INFORMATICAS</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body text-center">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item activo">
-                            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">NOVEDADES</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PRODUCTOS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="productos.html#notebooks">NOTEBOOKS</a></li>
-                                <li><a class="dropdown-item" href="productos.html#impresoras">IMPRESORAS</a></li>
-                                <li><a class="dropdown-item" href="productos.html#desktop">DESKTOP</a></li>
-                                <li><a class="dropdown-item" href="productos.html#conectividad#">CONECTIVIDAD</a></li>
-                                <li><a class="dropdown-item" href="productos.html#monitores">MONITORES</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light nav">
+            <div class="container-fluid">
+                <a href="index.html"class="navbar-brand"><img src="images/cubocolor.png" alt="logo empresa"class="logo__imagen"><span class="logo__texto">soluciones informaticas</span> </a>
+                <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link activo" aria-current="page" href="index.html">inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="novedades.html">novedades</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">productos</a>
+                            <ul class="dropdown-menu sublist sublist__productos" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="productos.html#conectividad">conectividad</a></li>
+                                <li><a class="dropdown-item" href="productos.html#desktop">desktop</a></li>
+                                <li><a class="dropdown-item" href="productos.html#impresoras">impresoras</a></li>
+                                <li><a class="dropdown-item" href="productos.html#monitores">monitores</a></li>
+                                <li><a class="dropdown-item" href="productos.html#notebooks">notebooks</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        MARCAS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="marcas.html#asus">ASUS</a></li>
-                                <li><a class="dropdown-item" href="marcas.html#dell">DELL</a></li>
-                                <li><a class="dropdown-item" href="marcas.html#intel">INTEL</a></li>
-                                <li><a class="dropdown-item" href="marcas.html#lenovo">LENOVO</a></li>
-                                <li><a class="dropdown-item" href="marcas.html#tplink">TP-LINK</a></li>
-                                <li><a class="dropdown-item" href="marcas.html#ubiquiti">UBIQUITI</a></li>
-                                <li><a class="dropdown-item" href="marcas.html#hp">HP</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">marcas</a>
+                            <ul class="dropdown-menu sublist" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="marcas.html#asus">asus</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#dell">dell</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#hp">hp</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#intel">intel</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#lenovo">lenovo</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#tpLink">tp-link</a></li>
+                                <li><a class="dropdown-item" href="marcas.html#ubiquiti">ubiquiti</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTANOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="curriculum.html">SUBIR C.V.</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="empresa.html">empresa</a></li>
                     </ul>
-                </div>
-                <div class="offcanvas-footer text-center">
-                    <a href="https://es-la.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icono Facebook"></a>
-                    <a href="https://ar.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="icono linkedin"></a>
-                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" alt="icono instagram"></a>
-                    <p><img src="images/copyright.png" alt="copyright"class="header__copyright"><b class="copyright__texto">2021 Leandro Wagner</b></p>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- / Barra deNavegacion Mobile--> 
-    <!-- Barra de navegacion -->
-        <nav class="header__nav--menu">
-            <section class="logo">
-                <a href="index.html"><img src="images/cubocolor.png" alt="logo"class="logo__imagen"><p class ="logo__Texto"> soluciones informaticas</p></a>
-            </section>
-            <ul>
-                <li class="activo"><a href="index.html">inicio</a></li>
-                <li><a href="novedades.html">novedades</a></li>
-                <li>
-                    <a href="productos.html">productos</a>
-                    <input type="checkbox"class="check">
-                    <ul class="sublist">
-                        <li><a href="productos.html#notebooks">Notebooks</a></li>
-                        <li><a href="productos.html#impresoras">Impresoras</a></li>
-                        <li><a href="productos.html#desktop">Desktop</a></li>
-                        <li><a href="productos.html#conectividad">Conectividad</a></li>
-                        <li><a href="productos.html#monitores">Monitores</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="marcas.html">marcas</a>
-                    <input type="checkbox">
-                    <ul class="sublist sublist__marcas">
-                        <li><a href="marcas.html#asus">Asus</a></li>
-                        <li><a href="marcas.html#dell">Dell</a></li>
-                        <li><a href="marcas.html#intel">Intel</a></li>
-                        <li><a href="marcas.html#lenovo">Lenovo</a></li>
-                        <li><a href="marcas.html#tplink">Tp-link</a></li>
-                        <li><a href="marcas.html#ubiquiti">Ubiquiti</a></li>
-                        <li><a href="marcas.html#hp">Hp</a></li>
-                    </ul>
-                </li>
-                <li><a href="quienes-somos.html">quienes somos</a></li>
-            </ul>        
-            <section class="section__login">
+            <section class="section__login text-center">
                 <section class="header__whatsapp">
                     <a href="https://wa.me/54911" target="_blank"><img src="images/whatsapp.png" alt="icono whatsapp"></a>
                 </section>
@@ -129,66 +62,66 @@
                 <a href="#"data-bs-toggle="modal" data-bs-target="#compras"><img src="images/carrito.png" alt="comprar"></a>
                 <a href="#"data-bs-toggle="modal" data-bs-target="#login"><img src="images/usuario.png" alt="usuario"></a>
                 </section>
-                <section>
+                <section class="text-center">
                     <input type="search" placeholder="Buscar..." >
                 </section>
             </section>   
         </nav>
-        <!-- /Barra de Navegación --> 
-        <!-- sección compras -->
-        <section class="section__modal">      
-            <div class="modal" tabindex="-1"id="compras">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header header__title">
-                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - COMPRAS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        <p>Para poder realizar la compra debes estar logueado</p>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn--medium btn-cancelar btn-modal" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /sección compras -->
-        <!-- sección login -->
-        <section class="section__modal">      
-            <div class="modal" tabindex="-1"id="login">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header header__title">
-                        <h5 class="modal-title">SOLUCIONES INFORMATICAS - INGRESAR</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body main">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email:</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo...">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-                                </div>
-                                    <button type="submit" class="btn--medium btn-enviar btn-modal">Ingresar</button>
-                            </form>
+            <!-- /Barra de Navegación --> 
+            <!-- sección compras -->
+            <section class="section__modal">      
+                <div class="modal" tabindex="-1"id="compras">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header header__title">
+                            <h5 class="modal-title">SOLUCIONES INFORMATICAS - COMPRAS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <p>Para poder realizar la compra debes estar logueado</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn--medium btn-cancelar btn-modal" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- /sección login -->
-    </header>
-    <!-- Fin del header de index.html -->
-    <!-- Comienzo del main de index.html -->
+            </section>
+            <!-- /sección compras -->
+            <!-- sección login -->
+            <section class="section__modal">      
+                <div class="modal" tabindex="-1"id="login">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header header__title">
+                            <h5 class="modal-title">SOLUCIONES INFORMATICAS - INGRESAR</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body main">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo...">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                                    </div>
+                                        <button type="submit" class="btn--medium btn-enviar btn-modal">Ingresar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /sección login -->
+        </header>
+        <!-- Fin del header de index.html -->
+    <!-- comienzo de main -->
     <main>
         <!-- carousel -->
         <section class="container-fluid section__carousel">
@@ -204,19 +137,19 @@
                         </div>
                         <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/notebook.jpg" class="d-block w-100" alt="notebook">
+                            <img src="images/notebook.png" class="d-block w-100" alt="notebook">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/monitores-carousel.jpg" class="d-block w-100" alt="monitor">
+                            <img src="images/monitor.png" class="d-block w-100" alt="monitor">
                         </div>
                         <div class="carousel-item">
                             <img src="images/routercarousel.png" class="d-block w-100" alt="router">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/impresoras.jpg" class="d-block w-100" alt="impresora">
+                            <img src="images/impresora.png" class="d-block w-100" alt="impresora">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/desktopcarousel.jpg" class="d-block w-100" alt="desktop">
+                            <img src="images/desktopcarousel.png" class="d-block w-100" alt="desktop">
                         </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -246,14 +179,20 @@
             <section class="cards__image">
                 <article>
                     <img src="images/ac-1200.png" alt="imagen producto">
+                    <section class="btn__cards text-center btn-cancelar container">
+                        <a class="btn__cards--texto"href="#compras"data-bs-toggle="modal"data-bs-target="#compras">Comprar</a>
+                    </section>            
                     <section class="cards__texto">    
                         <p class="card__category">Conectividad</p>
                         <p class="card__title">TP-LINK AC1200</p>
                         <p class="card__description">Access Point</p>
-                    </section>            
+                    </section>
                 </article>
                 <article>
                     <img src="images/asus-rog.png" alt="imagen producto">
+                    <section class="btn__cards text-center btn-cancelar container">
+                        <a class="btn__cards--texto"href="#compras"data-bs-toggle="modal"data-bs-target="#compras">Comprar</a>
+                    </section>  
                     <section class="cards__texto">    
                         <p class="card__category">Notebook</p>
                         <p class="card__title">ASUS ROG STRIX</p>
@@ -262,6 +201,9 @@
                 </article>
                 <article>
                     <img src="images/HP-270.png" alt="imagen producto">
+                    <section class="btn__cards text-center btn-cancelar container">
+                        <a class="btn__cards--texto"href="#compras"data-bs-toggle="modal"data-bs-target="#compras">Comprar</a>
+                    </section>  
                     <section class="cards__texto">    
                         <p class="card__category">Desktop</p>
                         <p class="card__title">HP 270</p>
@@ -284,6 +226,10 @@
         <p class="texto">Contactanos!!!</p>
     </section>
     <!--/Sección botón Whatsapp -->
+    <!-- boton top para dispositivos moviles pequeños -->
+    <section class="btn__top--moviles">
+        <a href="" onclick="window.location.href='#inicio'"><img src="images/flechatop.png" alt="boton top"class="btn__top--imagen"></a>
+    </section>
     <!-- sección Marcas -->
         <section class="container marcas">
             <div class="row">
@@ -336,7 +282,7 @@
                     <li><p><img src="images/cuboicono.png" alt="icono"><a href="novedades.html">NOVEDADES</a></p></li>
                     <li><p><img src="images/cuboicono.png" alt="icono"><a href="productos.html">PRODUCTOS</a></p></li>
                     <li><p><img src="images/cuboicono.png" alt="icono"><a href="marcas.html">MARCAS</a></p></li>
-                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="quienes-somos.html">EMPRESA</a></p></li>
+                    <li><p><img src="images/cuboicono.png" alt="icono"><a href="empresa.html">EMPRESA</a></p></li>
                     <li><p><img src="images/cuboicono.png" alt="icono"><a href="contacto.html">CONTACTANOS</a></p></li>
                     <li><p><img src="images/cuboicono.png" alt="icono"><a href="curriculum.html">SUBIR C.V.</a></p></li>
                 </ul>
