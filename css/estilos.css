@@ -383,6 +383,8 @@ aside:hover {
     padding: 0.5%;
     margin-left: 2.5%;
     margin-bottom: 20px; }
+  .section__marcas :hover {
+    filter: none; }
 
 .footer {
   position: relative;
@@ -462,6 +464,9 @@ aside:hover {
     .footer .footer__redes--sociales :hover {
       transform: scale(1.1);
       filter: grayscale(100%); }
+  .footer .footer__whatsapp {
+    text-decoration: none;
+    color: black; }
   .footer .footer__copyright {
     display: flex;
     flex-flow: row nowrap;

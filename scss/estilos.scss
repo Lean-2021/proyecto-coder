@@ -368,6 +368,10 @@ aside:hover{
         margin-left:2.5%;
         margin-bottom:20px;
     }
+    :hover{
+        filter:none;
+    }
+
 }
 //  footer
 .footer{
@@ -460,9 +464,12 @@ aside:hover{
         }
         :hover{
             transform: scale(1.1);
-            // filter:grayscale(100%);
             filter:grayscale(100%);
         }
+    }
+    .footer__whatsapp{
+        text-decoration:none;
+        color:black;
     }
     .footer__copyright{
         display:flex;
