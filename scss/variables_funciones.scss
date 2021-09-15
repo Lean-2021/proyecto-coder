@@ -56,16 +56,19 @@ $font_boton:(
     width:$width;
     height:$height;
     top:$top;
+    margin-top:-200px;
+    margin-bottom:80px;
     border-radius:0 15px 15px 0;
     background-color:var(--color_items-nav);
     font-size: 1.4rem;
     box-shadow: 3px 3px 3px black;
-    position:fixed;
+    position:sticky;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Rosario', sans-serif;
     text-transform: uppercase;
+    z-index:2;
 }
 // efectos hover sidebar
 @mixin hover1{

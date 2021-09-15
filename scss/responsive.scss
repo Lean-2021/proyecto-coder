@@ -313,14 +313,23 @@
         margin-top:-10px;
         .form__curriculum--texto{
             font-size:1.8rem;
-            width:310px;
+            width:300px;
         }
         .form__curriculum--fondo{
             width:100%;
-            height:1400px;
+            height:1300px;
         }
         .form__curriculum--textarea1{
         @include textarea__curriculum (310px,200px,4px,purple,5px,lightcyan,2rem,10px);
+        }
+        .form__curriculum--title{
+            font-size:2.5rem;
+            width:300px;
+        }
+        .form__curriculum--label{
+            font-size:2rem;
+            width:300px;
+            margin-bottom:20px;
         }
     }
     // boton top movil
@@ -494,7 +503,8 @@
     }
     // boton whatsapp
     .whatsapp{
-        display:none;
+        display:block;
+        z-index:1;
     } 
     // sidebars Marcas - Productos 
     .sidebar{
@@ -625,6 +635,12 @@
         .form__curriculum--boton{
             margin-top: 30px;
         }
+        .form__curriculum--textarea1{
+            @include textarea__curriculum (540px,250px,4px,purple,5px,lightcyan,2.2rem,10px);
+            }
+        .form__curriculum--texto{
+            font-size:1.8rem;
+        }
     }
     // boton top moviles
     .btn__top--moviles{
@@ -749,12 +765,7 @@
             }
         }
     }
-    // whatsapp en main
-    .whatsapp{
-        position:absolute;
-        left:72%;
-        z-index:1;
-    }
+    // footer
     .footer{
         margin-top:100px;
         .footer__informacion{
@@ -813,10 +824,17 @@
             height:1200px;
         }
         .form__curriculum--textarea1{
-        @include textarea__curriculum (500px,300px,4px,purple,5px,lightcyan,2rem,10px);
+            margin-top:50px;
+            @include textarea__curriculum (800px,300px,4px,purple,5px,lightcyan,2.5rem,10px);
         }
         .form__curriculum--boton{
             margin-top: 80px;
+        }
+        .form__curriculum--label{
+            width:300px;
+        }
+        .form__curriculum--texto{
+            font-size: 1.8rem;
         }
     }
     .titles{
@@ -893,21 +911,12 @@
             .section__login{
                 .section__login--images{
                     margin-left:-25px;
-                    // margin-right:auto;
                 }
                 input{
                     width:115px;
                 }
             }
         }
-    // boton whatsapp
-    .whatsapp{
-        left:76%;
-        img{
-            width:80px;
-            height:80px;
-        }
-    }
     //  footer
     .footer{
         margin-top:100px;
@@ -928,27 +937,23 @@
             width:15%;
         }
     }
-    // sidebar productos y marcas
-    .sidebar__productos{
-        position:sticky;
-        z-index:2;
-        margin-top:-200px;
-        margin-bottom:-40px;
-    }
-    .sidebar__marcas{
-        position:sticky;
-        z-index:2;
-        margin-top:-250px;
-        margin-bottom:-60px;
-    }
     // novedades video youtube
     .novedades__video--youtube{
         width:1200px;
         height:600px;
     }
+    // Contactos
     .contactos{
         .contactos_input{
             height:35px;
         }
+    }
+    .sidebar__marcas{
+        margin-top:-240px;
+        margin-bottom:-65px;
+    }
+    .sidebar__productos{
+        margin-top:-220px;
+        margin-bottom:-60px;
     }
 }

@@ -44,7 +44,7 @@
     opacity: 0; }
   to {
     top: 20%;
-    left: 10%;
+    left: -2%;
     opacity: 1; } }
 
 /* /botón Whatsapp */
@@ -323,12 +323,11 @@ aside:hover {
 
 .whatsapp {
   position: absolute;
-  float: right;
+  right: 0;
   width: 300px;
-  height: 110px;
-  left: 82%; }
+  height: 110px; }
   .whatsapp img {
-    margin-left: 80%;
+    float: right;
     width: 100px;
     height: 100px;
     box-shadow: -2px 4px 2px var(--sombra_items-nav);
@@ -337,7 +336,7 @@ aside:hover {
     display: none;
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: -2%;
     font-size: 2.5rem;
     line-height: 50px;
     letter-spacing: 2px;
@@ -355,11 +354,10 @@ aside:hover {
     transform: translate(-2px, 4px);
     box-shadow: none;
     transform: rotate(45deg); }
-
-:hover ~ .texto {
-  display: block;
-  animation-name: whatsapp;
-  animation-duration: 1s; }
+  .whatsapp :hover ~ .texto {
+    display: block;
+    animation-name: whatsapp;
+    animation-duration: 1s; }
 
 .marcas {
   position: relative; }
@@ -461,6 +459,9 @@ aside:hover {
       width: 30px;
       box-shadow: 2px 2px 2px black;
       border-radius: 19px; }
+    .footer .footer__redes--sociales :hover {
+      transform: scale(1.1);
+      filter: grayscale(100%); }
   .footer .footer__copyright {
     display: flex;
     flex-flow: row nowrap;
@@ -762,8 +763,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
   letter-spacing: 3px;
   /* efecto boton curriculum */ }
   .form__curriculum .form__curriculum--textarea1 {
-    width: 500px;
-    height: 200px;
+    width: 800px;
+    height: 250px;
     border: 4px solid purple;
     border-radius: 5px;
     background-color: lightcyan;
@@ -775,8 +776,10 @@ input[type=checkbox]:checked + .labelIntereses:after {
     outline: none;
     overflow: scroll;
     font-weight: bold; }
+  .form__curriculum .form__curriculum--label {
+    font-size: 2.5rem; }
   .form__curriculum .form__curriculum--texto {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold; }
   .form__curriculum .form__curriculum--boton {
     width: 100px;
@@ -785,7 +788,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
     color: var(--color_texto-nav);
     box-shadow: 2px 2px 4px #313131;
     border: 2px solid transparent;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold; }
   .form__curriculum .form__curriculum--fondo {
     position: absolute;
@@ -807,17 +810,20 @@ input[type=checkbox]:checked + .labelIntereses:after {
 .sidebar__productos {
   width: 130px;
   height: 242px;
-  top: 200px;
+  top: 35%;
+  margin-top: -200px;
+  margin-bottom: 80px;
   border-radius: 0 15px 15px 0;
   background-color: var(--color_items-nav);
   font-size: 1.4rem;
   box-shadow: 3px 3px 3px black;
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Rosario', sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 2; }
   .sidebar__productos .sidebar__productos--items {
     margin-top: 15px;
     line-height: 30px;
@@ -840,17 +846,20 @@ input[type=checkbox]:checked + .labelIntereses:after {
 .sidebar__marcas {
   width: 100px;
   height: 265px;
-  top: 150px;
+  top: 35%;
+  margin-top: -200px;
+  margin-bottom: 80px;
   border-radius: 0 15px 15px 0;
   background-color: var(--color_items-nav);
   font-size: 1.4rem;
   box-shadow: 3px 3px 3px black;
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Rosario', sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 2; }
   .sidebar__marcas .sidebar__marcas--items {
     margin-top: 15px;
     line-height: 20px;
@@ -1175,10 +1184,10 @@ input[type=checkbox]:checked + .labelIntereses:after {
     margin-top: -10px; }
     .form__curriculum .form__curriculum--texto {
       font-size: 1.8rem;
-      width: 310px; }
+      width: 300px; }
     .form__curriculum .form__curriculum--fondo {
       width: 100%;
-      height: 1400px; }
+      height: 1300px; }
     .form__curriculum .form__curriculum--textarea1 {
       width: 310px;
       height: 200px;
@@ -1187,6 +1196,13 @@ input[type=checkbox]:checked + .labelIntereses:after {
       background-color: lightcyan;
       font-size: 2rem;
       padding: 10px; }
+    .form__curriculum .form__curriculum--title {
+      font-size: 2.5rem;
+      width: 300px; }
+    .form__curriculum .form__curriculum--label {
+      font-size: 2rem;
+      width: 300px;
+      margin-bottom: 20px; }
   .btn__top--moviles {
     display: block; } }
 
@@ -1326,7 +1342,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
     .footer .footer__copyright {
       width: 100%; }
   .whatsapp {
-    display: none; }
+    display: block;
+    z-index: 1; }
   .sidebar {
     display: none; }
   .sidebar__productos {
@@ -1419,6 +1436,16 @@ input[type=checkbox]:checked + .labelIntereses:after {
       height: 1500px; }
     .form__curriculum .form__curriculum--boton {
       margin-top: 30px; }
+    .form__curriculum .form__curriculum--textarea1 {
+      width: 540px;
+      height: 250px;
+      border: 4px solid purple;
+      border-radius: 5px;
+      background-color: lightcyan;
+      font-size: 2.2rem;
+      padding: 10px; }
+    .form__curriculum .form__curriculum--texto {
+      font-size: 1.8rem; }
   .btn__top--moviles {
     display: block;
     top: 100vh;
@@ -1516,10 +1543,6 @@ input[type=checkbox]:checked + .labelIntereses:after {
       border: 1px solid grey; }
     .navbar .section__login .header__whatsapp {
       display: none; }
-  .whatsapp {
-    position: absolute;
-    left: 72%;
-    z-index: 1; }
   .footer {
     margin-top: 100px; }
     .footer .footer__informacion {
@@ -1561,15 +1584,20 @@ input[type=checkbox]:checked + .labelIntereses:after {
       width: 100%;
       height: 1200px; }
     .form__curriculum .form__curriculum--textarea1 {
-      width: 500px;
+      margin-top: 50px;
+      width: 800px;
       height: 300px;
       border: 4px solid purple;
       border-radius: 5px;
       background-color: lightcyan;
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 10px; }
     .form__curriculum .form__curriculum--boton {
       margin-top: 80px; }
+    .form__curriculum .form__curriculum--label {
+      width: 300px; }
+    .form__curriculum .form__curriculum--texto {
+      font-size: 1.8rem; }
   .titles {
     font-size: 5.5rem; } }
 
@@ -1631,11 +1659,6 @@ input[type=checkbox]:checked + .labelIntereses:after {
     margin-left: -25px; }
   .navbar .section__login input {
     width: 115px; }
-  .whatsapp {
-    left: 76%; }
-    .whatsapp img {
-      width: 80px;
-      height: 80px; }
   .footer {
     margin-top: 100px; }
     .footer .footer__informacion {
@@ -1648,18 +1671,14 @@ input[type=checkbox]:checked + .labelIntereses:after {
         font-size: 1.6rem; }
     .footer .footer__copyright {
       width: 15%; }
-  .sidebar__productos {
-    position: sticky;
-    z-index: 2;
-    margin-top: -200px;
-    margin-bottom: -40px; }
-  .sidebar__marcas {
-    position: sticky;
-    z-index: 2;
-    margin-top: -250px;
-    margin-bottom: -60px; }
   .novedades__video--youtube {
     width: 1200px;
     height: 600px; }
   .contactos .contactos_input {
-    height: 35px; } }
+    height: 35px; }
+  .sidebar__marcas {
+    margin-top: -240px;
+    margin-bottom: -65px; }
+  .sidebar__productos {
+    margin-top: -220px;
+    margin-bottom: -60px; } }
