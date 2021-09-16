@@ -140,11 +140,11 @@
         }
         .marcas__imagen--decorativa{
             position:absolute;
-            top:400px;
             width:150px;
             height:80px;
-            left:48%;
-            top:4%;        }
+            left:185px;
+            top:12px;
+        }
     }
     // cards Image
     .cards__image{
@@ -367,7 +367,7 @@
                     margin-top:18px;
                     margin-left:-10px;
                     width:270px;
-                    height:325px;
+                    height:445px;
                     box-shadow:3px 3px 2px black;
                     border-radius:10px;
                     .dropdown-item{
@@ -376,6 +376,9 @@
                         font-size:2.5rem;
                         line-height:50px;
                     }
+                }
+                .sublist__productos{
+                    height:325px;
                 }
                 .sublist::before{
                     content:'▲';
@@ -469,6 +472,19 @@
         .carousel-control-prev-icon, .carousel-control-next-icon{
             width:40px;
             height:60px;
+        }
+    }
+    // seccion marcas
+    .marcas{
+        margin-top:40px;
+        .marcas__imagen--decorativa{
+            top:30px;
+        }
+    }
+    .novedades{
+        .novedades__imagen--decorativa{
+            top:45px;
+            left:325px;
         }
     }
     // footer
@@ -765,6 +781,17 @@
             }
         }
     }
+    // novedades
+    .novedades{
+        .novedades__imagen--decorativa{
+            top:95px;
+            left:630px;
+        }
+    }
+    // sidebar redes sociales
+    .sidebar{
+        display:none;
+    }
     // footer
     .footer{
         margin-top:100px;
@@ -815,6 +842,12 @@
         width:1000px;
         height:600px;
     }
+    // sección marcas
+    .marcas{
+        .marcas__imagen--decorativa{
+            top:60px;
+        }
+    }
     // formulario de página Curriculum
     .form__curriculum{
         height:630px;
@@ -863,10 +896,10 @@
                 color:rgba(202, 55, 202, 0.5);
             }
             .navbar-nav{
-                margin-left:40px;
+                margin-left:20px;
                 .nav-item{
                     font-size: 2rem;
-                    margin-left:20px;
+                    margin-left:15px;
                     .sublist{
                         position:absolute;
                         width:110px;
@@ -892,7 +925,7 @@
                         content:'▲';
                         color:var(--color_items-nav);
                         font-size:20px;
-                        left:78px;
+                        left:80px;
                         top:-20px;
                     }
                     .sublist__productos{
@@ -903,7 +936,7 @@
                     }
                     .sublist__productos::before{
                         content:'▲';
-                        left:122px;
+                        left:125px;
                         top:-24px;
                     }
                 }
@@ -917,6 +950,19 @@
                 }
             }
         }
+    // seccion novedades
+    .novedades{
+        .novedades__imagen--decorativa{
+            top:95px;
+            left:640px;
+        }
+    }
+    // sección marcas
+    .marcas{
+        .marcas__imagen--decorativa{
+            top:60px;
+        }
+    }    
     //  footer
     .footer{
         margin-top:100px;
@@ -934,7 +980,7 @@
             }
         }
         .footer__copyright{
-            width:15%;
+            width:16%;
         }
     }
     // novedades video youtube

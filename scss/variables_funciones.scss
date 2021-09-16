@@ -31,7 +31,6 @@ $font_boton:(
         font-size:$size;
     }
 };
-
 // textarea de curriculum
 @mixin textarea__curriculum($width,$height,$borde,$bcolor,$bround,$bgcolor,$font,$padding) {
     width:$width;
@@ -42,7 +41,6 @@ $font_boton:(
     font-size:$font;
     padding:$padding;
 }
-
 // modales
 @mixin modal($color,$bgcolor,$font,$weight) {
     color:$color;
@@ -50,7 +48,6 @@ $font_boton:(
     font-size:$font;
     font-weight: $weight;
 }
-
 // sidebar
 @mixin sidebar($width,$height,$top){
     width:$width;

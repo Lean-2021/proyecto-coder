@@ -84,7 +84,7 @@ body{
                 content:'▲';
                 color:var(--color_items-nav);
                 font-size:20px;
-                left:98px;
+                left:80%;
                 top:-20px;
             }
             .sublist__productos{
@@ -94,7 +94,7 @@ body{
             }
             .sublist__productos::before{
                 content:'▲';
-                left:141px;
+                left:87%;
                 top:-25px;
             }
         }
@@ -170,7 +170,7 @@ body{
     .novedades__imagen--decorativa{
         position:absolute;
         left:55%;
-        top:36%;
+        top:105px;
     } 
 } 
 // cards Image
@@ -354,7 +354,7 @@ aside:hover{
     }
         .marcas__imagen--decorativa{
         position:absolute;
-        top:36%;
+        top:70px;
     } 
 }
 .section__marcas{
@@ -406,6 +406,10 @@ aside:hover{
         .logo{
             width:40px;
             margin-left:-10px;
+        }
+        .footer__whatsapp, .footer__informacion--maps{
+            text-decoration:none;
+            color:black;
         }
     }
     .footer__botonTop{
@@ -466,10 +470,6 @@ aside:hover{
             transform: scale(1.1);
             filter:grayscale(100%);
         }
-    }
-    .footer__whatsapp{
-        text-decoration:none;
-        color:black;
     }
     .footer__copyright{
         display:flex;

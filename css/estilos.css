@@ -145,7 +145,7 @@ body {
       content: '▲';
       color: var(--color_items-nav);
       font-size: 20px;
-      left: 98px;
+      left: 80%;
       top: -20px; }
     .navbar .navbar-nav .nav-item .sublist__productos {
       width: 165px;
@@ -153,7 +153,7 @@ body {
       line-height: 40px; }
     .navbar .navbar-nav .nav-item .sublist__productos::before {
       content: '▲';
-      left: 141px;
+      left: 87%;
       top: -25px; }
 
 .section__login {
@@ -213,7 +213,7 @@ body {
   .novedades .novedades__imagen--decorativa {
     position: absolute;
     left: 55%;
-    top: 36%; }
+    top: 105px; }
 
 .cards__image {
   display: flex;
@@ -371,7 +371,7 @@ aside:hover {
     margin-top: 5%; }
   .marcas .marcas__imagen--decorativa {
     position: absolute;
-    top: 36%; }
+    top: 70px; }
 
 .section__marcas {
   margin-top: 60px; }
@@ -416,6 +416,9 @@ aside:hover {
     .footer .footer__informacion .logo {
       width: 40px;
       margin-left: -10px; }
+    .footer .footer__informacion .footer__whatsapp, .footer .footer__informacion .footer__informacion--maps {
+      text-decoration: none;
+      color: black; }
   .footer .footer__botonTop {
     position: fixed;
     top: 100vh;
@@ -464,9 +467,6 @@ aside:hover {
     .footer .footer__redes--sociales :hover {
       transform: scale(1.1);
       filter: grayscale(100%); }
-  .footer .footer__whatsapp {
-    text-decoration: none;
-    color: black; }
   .footer .footer__copyright {
     display: flex;
     flex-flow: row nowrap;
@@ -1064,11 +1064,10 @@ input[type=checkbox]:checked + .labelIntereses:after {
       font-size: 6rem; }
     .marcas .marcas__imagen--decorativa {
       position: absolute;
-      top: 400px;
       width: 150px;
       height: 80px;
-      left: 48%;
-      top: 4%; }
+      left: 185px;
+      top: 12px; }
   .cards__image {
     display: flex;
     flex-direction: column;
@@ -1234,7 +1233,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
       margin-top: 18px;
       margin-left: -10px;
       width: 270px;
-      height: 325px;
+      height: 445px;
       box-shadow: 3px 3px 2px black;
       border-radius: 10px; }
       .navbar .navbar-nav .nav-item .sublist .dropdown-item {
@@ -1242,6 +1241,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
         margin-top: 6px;
         font-size: 2.5rem;
         line-height: 50px; }
+    .navbar .navbar-nav .nav-item .sublist__productos {
+      height: 325px; }
     .navbar .navbar-nav .nav-item .sublist::before {
       content: '▲';
       left: 173px;
@@ -1324,6 +1325,13 @@ input[type=checkbox]:checked + .labelIntereses:after {
   .section__carousel .carousel-control-prev-icon, .section__carousel .carousel-control-next-icon {
     width: 40px;
     height: 60px; }
+  .marcas {
+    margin-top: 40px; }
+    .marcas .marcas__imagen--decorativa {
+      top: 30px; }
+  .novedades .novedades__imagen--decorativa {
+    top: 45px;
+    left: 325px; }
   .footer {
     height: 600px; }
     .footer .footer__botonTop {
@@ -1548,6 +1556,11 @@ input[type=checkbox]:checked + .labelIntereses:after {
       border: 1px solid grey; }
     .navbar .section__login .header__whatsapp {
       display: none; }
+  .novedades .novedades__imagen--decorativa {
+    top: 95px;
+    left: 630px; }
+  .sidebar {
+    display: none; }
   .footer {
     margin-top: 100px; }
     .footer .footer__informacion {
@@ -1582,6 +1595,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
   .novedades__video--youtube {
     width: 1000px;
     height: 600px; }
+  .marcas .marcas__imagen--decorativa {
+    top: 60px; }
   .form__curriculum {
     height: 630px;
     margin-top: -10px; }
@@ -1623,10 +1638,10 @@ input[type=checkbox]:checked + .labelIntereses:after {
   .navbar :hover {
     color: rgba(202, 55, 202, 0.5); }
   .navbar .navbar-nav {
-    margin-left: 40px; }
+    margin-left: 20px; }
     .navbar .navbar-nav .nav-item {
       font-size: 2rem;
-      margin-left: 20px; }
+      margin-left: 15px; }
       .navbar .navbar-nav .nav-item .sublist {
         position: absolute;
         width: 110px;
@@ -1649,7 +1664,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
         content: '▲';
         color: var(--color_items-nav);
         font-size: 20px;
-        left: 78px;
+        left: 80px;
         top: -20px; }
       .navbar .navbar-nav .nav-item .sublist__productos {
         width: 150px;
@@ -1658,12 +1673,17 @@ input[type=checkbox]:checked + .labelIntereses:after {
         left: -10px; }
       .navbar .navbar-nav .nav-item .sublist__productos::before {
         content: '▲';
-        left: 122px;
+        left: 125px;
         top: -24px; }
   .navbar .section__login .section__login--images {
     margin-left: -25px; }
   .navbar .section__login input {
     width: 115px; }
+  .novedades .novedades__imagen--decorativa {
+    top: 95px;
+    left: 640px; }
+  .marcas .marcas__imagen--decorativa {
+    top: 60px; }
   .footer {
     margin-top: 100px; }
     .footer .footer__informacion {
@@ -1675,7 +1695,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
       .footer .footer__menu li a {
         font-size: 1.6rem; }
     .footer .footer__copyright {
-      width: 15%; }
+      width: 16%; }
   .novedades__video--youtube {
     width: 1200px;
     height: 600px; }
