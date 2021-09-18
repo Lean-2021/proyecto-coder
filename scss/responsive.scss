@@ -5,7 +5,8 @@
         .navbar-nav{
             .nav-item{
                 margin-top:20px;
-                margin-left:10px;
+                margin-left:auto;
+                margin-right: auto;
                 width:155px;
                 border-radius: 20px;
                 background-color: var(--color_items-nav);
@@ -344,7 +345,8 @@
         .navbar-nav{
             .nav-item{
                 margin-top:20px;
-                margin-left:-80px;
+                margin-left:auto;
+                margin-right:auto;
                 align-self:center;
                 width:255px;
                 border-radius: 20px;
@@ -673,6 +675,7 @@
 // dispositivos medianos - grandes
 @media only screen and(min-width:1000px) and (max-width:1300px){
     .navbar{
+        margin:auto;
         .logo__imagen{
             width: 50px;
             height:50px;
@@ -896,7 +899,7 @@
                 color:rgba(202, 55, 202, 0.5);
             }
             .navbar-nav{
-                margin-left:20px;
+                margin-left:auto;
                 .nav-item{
                     font-size: 2rem;
                     margin-left:15px;
@@ -925,7 +928,7 @@
                         content:'▲';
                         color:var(--color_items-nav);
                         font-size:20px;
-                        left:80px;
+                        left:72%;
                         top:-20px;
                     }
                     .sublist__productos{
@@ -936,7 +939,7 @@
                     }
                     .sublist__productos::before{
                         content:'▲';
-                        left:125px;
+                        left:82%;
                         top:-24px;
                     }
                 }
@@ -953,8 +956,8 @@
     // seccion novedades
     .novedades{
         .novedades__imagen--decorativa{
-            top:95px;
-            left:640px;
+            top:36%;
+            left:56%;
         }
     }
     // sección marcas

@@ -103,7 +103,7 @@ body {
   color: rgba(202, 55, 202, 0.5); }
 
 .navbar .navbar-nav {
-  margin-left: 80px; }
+  margin-left: auto; }
   .navbar .navbar-nav .nav-item {
     font-size: 2.5rem;
     margin-left: 40px;
@@ -959,7 +959,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .navbar .navbar-nav .nav-item {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 155px;
     border-radius: 20px;
     background-color: var(--color_items-nav);
@@ -1213,7 +1214,8 @@ input[type=checkbox]:checked + .labelIntereses:after {
 @media only screen and (min-width: 610px) and (max-width: 999px) {
   .navbar .navbar-nav .nav-item {
     margin-top: 20px;
-    margin-left: -80px;
+    margin-left: auto;
+    margin-right: auto;
     align-self: center;
     width: 255px;
     border-radius: 20px;
@@ -1469,93 +1471,95 @@ input[type=checkbox]:checked + .labelIntereses:after {
       height: 60px; } }
 
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
-  .navbar .logo__imagen {
-    width: 50px;
-    height: 50px;
-    margin-left: 5px; }
-  .navbar .logo__texto {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--color_titles);
-    text-shadow: 2px 2px 2px grey;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    vertical-align: middle;
-    letter-spacing: 1px; }
-  .navbar .navbar-nav {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 60px; }
-    .navbar .navbar-nav .nav-item {
-      font-size: 2rem;
-      margin-left: 15px;
-      text-transform: uppercase;
-      font-family: 'Rosario', sans-serif; }
-      .navbar .navbar-nav .nav-item .nav-link {
-        font-weight: bold;
-        color: var(--color_items-nav);
-        background-image: linear-gradient(to right, violet, blue);
-        background-position: 50% 95%;
-        background-repeat: no-repeat;
-        background-size: 0% 3px;
-        transition: background-size .2s; }
-      .navbar .navbar-nav .nav-item :hover {
-        background-size: 90% 3px; }
-      .navbar .navbar-nav .nav-item .nav-link:hover {
-        color: gray; }
-      .navbar .navbar-nav .nav-item .activo {
-        color: coral; }
-      .navbar .navbar-nav .nav-item .sublist {
-        position: absolute;
-        width: 115px;
-        top: 32px;
-        left: -5px;
-        background-color: var(--color_items-nav);
-        box-shadow: 2px 2px 2px black;
-        border-radius: 0 0 10px 10px;
-        text-align: center;
-        z-index: 2;
-        animation-name: sublistas;
-        animation-duration: .5s; }
-        .navbar .navbar-nav .nav-item .sublist .dropdown-item {
-          color: white;
-          font-size: 2rem; }
-        .navbar .navbar-nav .nav-item .sublist .dropdown-item:hover {
-          font-weight: bold;
-          color: violet; }
-      .navbar .navbar-nav .nav-item .sublist::before {
-        position: absolute;
-        content: '▲';
-        color: var(--color_items-nav);
-        font-size: 20px;
-        left: 82px;
-        top: -18px; }
-      .navbar .navbar-nav .nav-item .sublist__productos {
-        width: 165px;
-        height: 240px;
-        left: -17px;
-        line-height: 40px; }
-      .navbar .navbar-nav .nav-item .sublist__productos::before {
-        content: '▲';
-        left: 129px;
-        top: -23px; }
-  .navbar .section__login {
-    width: 11%; }
-    .navbar .section__login img {
-      width: 40px;
+  .navbar {
+    margin: auto; }
+    .navbar .logo__imagen {
+      width: 50px;
+      height: 50px;
       margin-left: 5px; }
-    .navbar .section__login :hover {
-      transform: scale(1.1); }
-    .navbar .section__login input {
-      width: 105px;
-      margin-top: 10px;
-      font-size: 1.6rem;
-      border-radius: 15px;
-      outline: none;
-      text-align: center;
-      border: 1px solid grey; }
-    .navbar .section__login .header__whatsapp {
-      display: none; }
+    .navbar .logo__texto {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--color_titles);
+      text-shadow: 2px 2px 2px grey;
+      font-size: 2.5rem;
+      font-weight: bolder;
+      vertical-align: middle;
+      letter-spacing: 1px; }
+    .navbar .navbar-nav {
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: 60px; }
+      .navbar .navbar-nav .nav-item {
+        font-size: 2rem;
+        margin-left: 15px;
+        text-transform: uppercase;
+        font-family: 'Rosario', sans-serif; }
+        .navbar .navbar-nav .nav-item .nav-link {
+          font-weight: bold;
+          color: var(--color_items-nav);
+          background-image: linear-gradient(to right, violet, blue);
+          background-position: 50% 95%;
+          background-repeat: no-repeat;
+          background-size: 0% 3px;
+          transition: background-size .2s; }
+        .navbar .navbar-nav .nav-item :hover {
+          background-size: 90% 3px; }
+        .navbar .navbar-nav .nav-item .nav-link:hover {
+          color: gray; }
+        .navbar .navbar-nav .nav-item .activo {
+          color: coral; }
+        .navbar .navbar-nav .nav-item .sublist {
+          position: absolute;
+          width: 115px;
+          top: 32px;
+          left: -5px;
+          background-color: var(--color_items-nav);
+          box-shadow: 2px 2px 2px black;
+          border-radius: 0 0 10px 10px;
+          text-align: center;
+          z-index: 2;
+          animation-name: sublistas;
+          animation-duration: .5s; }
+          .navbar .navbar-nav .nav-item .sublist .dropdown-item {
+            color: white;
+            font-size: 2rem; }
+          .navbar .navbar-nav .nav-item .sublist .dropdown-item:hover {
+            font-weight: bold;
+            color: violet; }
+        .navbar .navbar-nav .nav-item .sublist::before {
+          position: absolute;
+          content: '▲';
+          color: var(--color_items-nav);
+          font-size: 20px;
+          left: 82px;
+          top: -18px; }
+        .navbar .navbar-nav .nav-item .sublist__productos {
+          width: 165px;
+          height: 240px;
+          left: -17px;
+          line-height: 40px; }
+        .navbar .navbar-nav .nav-item .sublist__productos::before {
+          content: '▲';
+          left: 129px;
+          top: -23px; }
+    .navbar .section__login {
+      width: 11%; }
+      .navbar .section__login img {
+        width: 40px;
+        margin-left: 5px; }
+      .navbar .section__login :hover {
+        transform: scale(1.1); }
+      .navbar .section__login input {
+        width: 105px;
+        margin-top: 10px;
+        font-size: 1.6rem;
+        border-radius: 15px;
+        outline: none;
+        text-align: center;
+        border: 1px solid grey; }
+      .navbar .section__login .header__whatsapp {
+        display: none; }
   .novedades .novedades__imagen--decorativa {
     top: 95px;
     left: 630px; }
@@ -1638,7 +1642,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
   .navbar :hover {
     color: rgba(202, 55, 202, 0.5); }
   .navbar .navbar-nav {
-    margin-left: 20px; }
+    margin-left: auto; }
     .navbar .navbar-nav .nav-item {
       font-size: 2rem;
       margin-left: 15px; }
@@ -1664,7 +1668,7 @@ input[type=checkbox]:checked + .labelIntereses:after {
         content: '▲';
         color: var(--color_items-nav);
         font-size: 20px;
-        left: 80px;
+        left: 72%;
         top: -20px; }
       .navbar .navbar-nav .nav-item .sublist__productos {
         width: 150px;
@@ -1673,15 +1677,15 @@ input[type=checkbox]:checked + .labelIntereses:after {
         left: -10px; }
       .navbar .navbar-nav .nav-item .sublist__productos::before {
         content: '▲';
-        left: 125px;
+        left: 82%;
         top: -24px; }
   .navbar .section__login .section__login--images {
     margin-left: -25px; }
   .navbar .section__login input {
     width: 115px; }
   .novedades .novedades__imagen--decorativa {
-    top: 95px;
-    left: 640px; }
+    top: 36%;
+    left: 56%; }
   .marcas .marcas__imagen--decorativa {
     top: 60px; }
   .footer {
